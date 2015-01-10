@@ -2,8 +2,21 @@
 
 class Clock
 {
+	private $clock = false;
 
+	 public function start()
+	{
+		$this->clock = microtime(true);
+	}
+	public function finish()
+	{
 
+		$this->clock = microtime(true) - $this->clock;
+	}
+	public function __toString()
+	{
+		return (string) $this->clock;
+	}
 }
 
 $clock = new Clock();
