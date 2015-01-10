@@ -1,5 +1,5 @@
 <!-- Capitulo 2 - Laboratorio 1 -->
-<form action="" class="form-horizontal">
+<form action="" method="POST" class="form-horizontal" enctype="multpart/form-data" >
     <fieldset>
 
         <!-- Form Name -->
@@ -22,7 +22,7 @@
         <div class="control-group">
             <label class="control-label"></label>
             <div class="controls">
-                <button class="btn btn-primary">Salvar</button>
+                <button class="btn btn-primary" >Salvar</button>
             </div>
         </div>
 

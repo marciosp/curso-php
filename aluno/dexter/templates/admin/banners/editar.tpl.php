@@ -1,5 +1,5 @@
 <!-- Capitulo 2 - Laboratorio 1 -->
-<form action="" class="form-horizontal">
+<form method="POST" action="" class="form-horizontal" enctype="multpart/form-data">  
     <fieldset>
 
         <!-- Form Name -->
@@ -15,7 +15,7 @@
         <div class="control-group">
             <label class="control-label">Imagem:</label>
             <div class="controls">
-		        <input class="span4" type="text" name="imagem" />
+		        <input class="span4" type="file" name="imagem" />
             </div>
         </div>
 

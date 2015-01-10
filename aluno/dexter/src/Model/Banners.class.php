@@ -68,7 +68,7 @@ class Banners extends ModelBase
 	 * @return \stdClass
 	 */
 	public function inserir()
-	{
+	{		
 	    if( $this->salvar() ) {
 	        @header('Location: admin.php?modulo=Banners&acao=gerenciar');
 	    }
@@ -112,6 +112,7 @@ class Banners extends ModelBase
             	    $nome_arquivo = "banner/{$date}_{$_FILES['imagem']['name']}";
 
             	    # Capitulo 2 - Laboratorio 1
+					move_uploaded_file($_FILE['imagem']['tmp_name'],$nome_arquivo);
 	            }
 	            
 	            // alimentado objeto ModelData para ser persistido

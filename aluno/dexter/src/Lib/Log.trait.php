@@ -23,7 +23,7 @@ trait Log
 		
 		$arquivo     = Config::get('log.path');
 		
-		# Capitulo 2 - Laboratorio 2		
+		# Capitulo 2 - Laboratorio 2
 		
 	}
 	
